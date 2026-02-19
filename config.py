@@ -1,0 +1,7 @@
+# catalog = "brandon_cowen"
+# schema = dbName = db = "brick_data"
+catalog = "main"
+schema = dbName = db = "brandon_cowen"
+table = "parsed_data"
+volume_name = "raw_documents"
+base_url = "https://raw.githubusercontent.com/brandon-cowen0databricks/agent-bricks-workshop/"

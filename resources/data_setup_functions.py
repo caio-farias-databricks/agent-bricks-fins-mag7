@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 def create_catalog_and_schema(spark, catalog: str, schema: str):
     """Create catalog and schema if they don't exist."""
     try:
-        spark.sql(f"CREATE CATALOG IF NOT EXISTS {catalog}")
+        # spark.sql(f"CREATE CATALOG IF NOT EXISTS {catalog}")
         spark.sql(f"CREATE SCHEMA IF NOT EXISTS {catalog}.{schema}")
         logger.info(f"Catalog {catalog} and schema {schema} ensured.")
     except Exception as e:
